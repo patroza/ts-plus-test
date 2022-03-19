@@ -1,0 +1,18 @@
+{
+  "name": "ts-plus-test",
+  "packageManager": "yarn@3.2.0",
+  "dependencies": {
+    "@effect-ts/core-next": "*",
+    "typescript": "^4.6.2"
+  },
+  "devDependencies": {
+    "@tsplus/installer": "0.0.31",
+    "typescript": "^4.6.2"
+  },
+  "scripts": {
+    "postinstall": "tsplus-install"
+  },
+  "resolutions": {
+    "@effect-ts/core-next": "portal:/Users/patrickroza/Projects/effect-consult/effect-ts-next/core/packages/core"
+  }
+}
