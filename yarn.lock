@@ -55,9 +55,16 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsplus/installer@npm:0.0.31":
-  version: 0.0.31
-  resolution: "@tsplus/installer@npm:0.0.31"
+"@tsconfig/strictest@npm:^1.0.0":
+  version: 1.0.0
+  resolution: "@tsconfig/strictest@npm:1.0.0"
+  checksum: 9a198086c29ecef1108e0c5a94bb59d0f3d53daf7c5a8e16424283b0cc8d7d27361d707b1a91be56f0c850551a853d64c087c3e9f1c341558adb12902b3d4f9a
+  languageName: node
+  linkType: hard
+
+"@tsplus/installer@npm:0.0.37":
+  version: 0.0.37
+  resolution: "@tsplus/installer@npm:0.0.37"
   dependencies:
     mkdirp: ^1.0.4
     rimraf: ^3.0.2
@@ -66,7 +73,7 @@ __metadata:
     zlib: ^1.0.5
   bin:
     tsplus-install: bin/tsplus-install
-  checksum: ec47fd497777e2bf931a70baa14fcb146bc85fa4dccbf16ea2b377421c781e268b2d544797773eaa8af5fb2af269286021de5cdf02fab720b03173036fd134bd
+  checksum: 1a3745e75f8cf59a76097623df7b1b55bda91d18a75661e2d098b78aae50e8e6de3e0b10a7eb8628bad47cb4e9d36bc2ea48726fc6ef8f9da9a88b93e7b35aba
   languageName: node
   linkType: hard
 
@@ -270,7 +277,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"ts-node@npm:^10.4.0":
+"ts-node@npm:^10.4.0, ts-node@npm:^10.7.0":
   version: 10.7.0
   resolution: "ts-node@npm:10.7.0"
   dependencies:
@@ -313,7 +320,9 @@ __metadata:
   resolution: "ts-plus-test@workspace:."
   dependencies:
     "@effect-ts/core-next": "*"
-    "@tsplus/installer": 0.0.31
+    "@tsconfig/strictest": ^1.0.0
+    "@tsplus/installer": 0.0.37
+    ts-node: ^10.7.0
     typescript: ^4.6.2
   languageName: unknown
   linkType: soft
