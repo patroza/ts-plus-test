@@ -1,8 +1,10 @@
 import { Sync } from "@effect-ts/core-next/io-light/Sync"
 
-import type { String50 } from "./types/String50"
+import { String50 } from "./types/String50"
 
 export type NamePart = String50 // TODO
+export const NamePart = String50
+
 
 /** @tsplus type Person */
 export class Person {

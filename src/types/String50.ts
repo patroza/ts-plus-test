@@ -15,6 +15,13 @@ export interface String50Brand {
 export type String50 = string & String50Brand
 
 /**
+ * @tsplus type String50
+ */
+export interface String50Ops {}
+export const String50: String50Ops = {}
+
+/**
+ * @tsplus static String50 parse
  * @tsplus fluent string parseAsString50
  */
 export function parse(self: string) {
@@ -27,6 +34,8 @@ export function parse(self: string) {
 }
 
 /**
+ * @tsplus static String50 __call
+ * @tsplus static String50 unsafe
  * @tsplus fluent string unsafeAsString50
  */
 export function unsafe(self: string) {
