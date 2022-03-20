@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-empty-interface */
 import { Sync } from "@effect-ts/core-next/io-light/Sync"
 
 declare global {
@@ -6,7 +7,6 @@ declare global {
    */
   export interface String {}
 }
-
 
 export interface String50Brand {
   readonly String50: unique symbol
@@ -27,15 +27,12 @@ export function parse(self: string) {
 }
 
 /**
- * @tsplus getter string lines
- */
- export function lines(self: string): string[] {
-  return self.split("\n");
-}
-
-/**
  * @tsplus fluent string unsafeAsString50
  */
 export function unsafe(self: string) {
-  return parse(self).mapError((err) => { throw err }).run()
+  return parse(self)
+    .mapError((err) => {
+      throw err
+    })
+    .run()
 }

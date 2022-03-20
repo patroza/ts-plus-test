@@ -1,8 +1,8 @@
 import { Sync } from "@effect-ts/core-next/io-light/Sync"
-import { String50 } from "./types/String50"
+
+import type { String50 } from "./types/String50"
 
 export type NamePart = String50 // TODO
-
 
 /** @tsplus type Person */
 export class Person {
@@ -11,6 +11,14 @@ export class Person {
   constructor(vars: Person) {
     Object.assign(this, vars)
   }
+}
+
+/**
+ * Copy
+ * @tsplus fluent Person cp
+ */
+export function copy(self: Person, changes: Partial<Person>) {
+  return new Person({ ...self, ...changes })
 }
 
 /**
@@ -24,5 +32,5 @@ export function sayHello(self: Person) {
  * @tsplus fluent Person rename
  */
 export function rename(self: Person, firstName: NamePart, lastName: NamePart) {
-  return new Person({ ...self, firstName, lastName })
+  return self.cp({ firstName, lastName })
 }
