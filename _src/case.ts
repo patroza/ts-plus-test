@@ -1,5 +1,7 @@
 import "./bla"
 
+import { Case } from "@tsplus/stdlib/data/Case"
+
 interface Person extends Case {
   readonly _tag: "Person"
   readonly name: string
