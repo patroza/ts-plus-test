@@ -1,6 +1,7 @@
 {
   "name": "ts-plus-test",
   "packageManager": "yarn@3.2.0",
+  "type": "module",
   "dependencies": {
     "@effect/core": "*",
     "typescript": "^4.6.2"
@@ -35,7 +36,8 @@
   "scripts": {
     "build": "tsc --build",
     "postinstall": "tsplus-install",
-    "start": "ts-node ./_src/test.ts"
+    "start": "node build/dist/test.js",
+    "start-ts-node-broken": "ts-node ./_src/test.ts"
   },
   "resolutions": {
     "@effect/core": "portal:/Users/patrickroza/Projects/effect-consult/effect-ts-next/core/packages/core"
