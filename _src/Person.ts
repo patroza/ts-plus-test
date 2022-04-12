@@ -1,15 +1,20 @@
-import { Sync } from "@effect-ts/core-next/io-light/Sync"
-
 import { String50 } from "./types/String50"
 
 export type NamePart = String50 // TODO
 export const NamePart = String50
 
+export interface Schema<Encoded, Parsed> {
+  Encoded: Encoded
+  Parsed: Parsed
+}
+
+export const Schema: Schema<Person, Person> = {} as any
 
 /** @tsplus type Person */
 export class Person {
   public readonly firstName!: NamePart
   public readonly lastName!: NamePart
+  public static Schema = Schema
   constructor(vars: Person) {
     Object.assign(this, vars)
   }

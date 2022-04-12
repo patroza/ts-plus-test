@@ -2,10 +2,15 @@
   "extends": "./tsconfig.base.json",
   "compilerOptions": {
     "module": "CommonJS",
-    "lib": ["ES2021", "DOM"],
-    "importsNotUsedAsValues": "remove"
+    "lib": [
+      "ES2021",
+      "DOM"
+    ],
+    "rootDir": "_src",
+    "importsNotUsedAsValues": "remove",
+    "tsPlusConfig": "./tsplus.config.json",
   },
   "include": [
-    "./src"
+    "./_src"
   ]
 }

@@ -1,6 +1,4 @@
 /* eslint-disable @typescript-eslint/no-empty-interface */
-import { Sync } from "@effect-ts/core-next/io-light/Sync"
-
 declare global {
   /**
    * @tsplus type string
