@@ -1,4 +1,4 @@
-import { NamePart, Person } from "./Person.js"
+import { NamePart, Person } from "./Person"
 
 const p = new Person({
   firstName: NamePart("First"),

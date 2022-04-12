@@ -1,4 +1,4 @@
-import { String50 } from "./types/String50.js"
+import { String50 } from "./types/String50"
 
 export type NamePart = String50 // TODO
 export const NamePart = String50
