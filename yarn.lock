@@ -270,9 +270,14 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@effect-ts/core-next@portal:/Users/patrickroza/Projects/effect-consult/effect-ts-next/core/packages/core::locator=ts-plus-test%40workspace%3A.":
+"@effect/core@portal:/Users/patrickroza/Projects/effect-consult/effect-ts-next/core/packages/core::locator=ts-plus-test%40workspace%3A.":
   version: 0.0.0-use.local
-  resolution: "@effect-ts/core-next@portal:/Users/patrickroza/Projects/effect-consult/effect-ts-next/core/packages/core::locator=ts-plus-test%40workspace%3A."
+  resolution: "@effect/core@portal:/Users/patrickroza/Projects/effect-consult/effect-ts-next/core/packages/core::locator=ts-plus-test%40workspace%3A."
+  peerDependencies:
+    "@tsplus/stdlib": "*"
+  peerDependenciesMeta:
+    "@tsplus/stdlib":
+      optional: true
   languageName: node
   linkType: soft
 
@@ -444,9 +449,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsplus/installer@npm:0.0.54":
-  version: 0.0.54
-  resolution: "@tsplus/installer@npm:0.0.54"
+"@tsplus/installer@npm:0.0.81":
+  version: 0.0.81
+  resolution: "@tsplus/installer@npm:0.0.81"
   dependencies:
     mkdirp: ^1.0.4
     rimraf: ^3.0.2
@@ -455,7 +460,14 @@ __metadata:
     zlib: ^1.0.5
   bin:
     tsplus-install: bin/tsplus-install
-  checksum: ce6552aa9c0483f1fb375e667341d8ecb488ab4c6e29f384ee90f63cd396fa3b1e6b18aae9835e391bfefe783ce198892ee463e25e2daf678e00f7e809a3120f
+  checksum: 0718bcf0fac136bec61f0619e5e03b11d754da1ee78ea99cd5e62f540fbb9167b9ea76c3c10f1f6bac8f6adb2548b7593779d741f2d86f1d58b9c9e1ddd864f1
+  languageName: node
+  linkType: hard
+
+"@tsplus/stdlib@npm:^0.0.44":
+  version: 0.0.44
+  resolution: "@tsplus/stdlib@npm:0.0.44"
+  checksum: 4ada54e2f2ee8dd203514dd4608c8e2f70cea6794575e21a83ec8ce47fb3243c4f4ee2bde6e0dd42990f54e3ca170aaa60cc50bf5c149efe340e2f0aebcfae1e
   languageName: node
   linkType: hard
 
@@ -3666,9 +3678,10 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "ts-plus-test@workspace:."
   dependencies:
-    "@effect-ts/core-next": "*"
+    "@effect/core": "*"
     "@tsconfig/strictest": ^1.0.0
-    "@tsplus/installer": 0.0.54
+    "@tsplus/installer": 0.0.81
+    "@tsplus/stdlib": ^0.0.44
     "@typescript-eslint/eslint-plugin": ^5.15.0
     "@typescript-eslint/parser": ^5.15.0
     eslint: ^8.11.0

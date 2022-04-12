@@ -2,12 +2,13 @@
   "name": "ts-plus-test",
   "packageManager": "yarn@3.2.0",
   "dependencies": {
-    "@effect-ts/core-next": "*",
+    "@effect/core": "*",
     "typescript": "^4.6.2"
   },
   "devDependencies": {
     "@tsconfig/strictest": "^1.0.0",
-    "@tsplus/installer": "0.0.54",
+    "@tsplus/installer": "0.0.81",
+    "@tsplus/stdlib": "^0.0.44",
     "@typescript-eslint/eslint-plugin": "^5.15.0",
     "@typescript-eslint/parser": "^5.15.0",
     "eslint": "^8.11.0",
@@ -25,13 +26,19 @@
     "ts-node": "^10.7.0",
     "typescript": "^4.6.2"
   },
+  "exports": {
+    "./*": {
+      "require": "./_src/*.ts",
+      "import": "./build/dist/*.js"
+    }
+  },
   "scripts": {
     "build": "tsc --build",
     "postinstall": "tsplus-install",
-    "start": "ts-node ./src/test.ts"
+    "start": "ts-node ./_src/test.ts"
   },
   "resolutions": {
-    "@effect-ts/core-next": "portal:/Users/patrickroza/Projects/effect-consult/effect-ts-next/core/packages/core"
+    "@effect/core": "portal:/Users/patrickroza/Projects/effect-consult/effect-ts-next/core/packages/core"
   },
   "tsplus": {
     "typeDir": "./build/dts"
