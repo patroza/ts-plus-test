@@ -1,4 +1,4 @@
-import { Provide } from "@/io-light/XPure/definition/primitives";
+import { Provide } from "ts-plus-test/io-light/XPure/definition/primitives";
 
 /**
  * Provides this computation with its required environment.

@@ -487,13 +487,12 @@
    Spreadable,
    UnionToIntersection
  } from "@tsplus/stdlib/utilities/Types";
-
  /**
   * @tsplus global
   */
- import { Sync } from "@/io-light/Sync/definition";
+ import { Sync } from "ts-plus-test/io-light/Sync/definition";
  /**
   * @tsplus global
   */
- import { XPure } from "@/io-light/XPure/definition/base";
+ import { XPure } from "ts-plus-test/io-light/XPure/definition/base";
  

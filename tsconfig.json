@@ -10,7 +10,7 @@
     "importsNotUsedAsValues": "remove",
     "tsPlusConfig": "./tsplus.config.json",
     "paths": {
-      "@/*": [
+      "ts-plus-test/*": [
         "./_src/*"
       ]
     },

@@ -26,13 +26,11 @@
     "eslint-watch": "^8.0.0",
     "prettier": "^2.6.0",
     "ts-node": "^10.7.0",
+    "tsconfig-paths": "^3.14.1",
     "typescript": "^4.6.2"
   },
   "exports": {
-    "./*": {
-      "require": "./_src/*.ts",
-      "import": "./build/dist/*.js"
-    }
+    "./*": "./build/dist/*.js"
   },
   "scripts": {
     "clean": "rm -rf build",

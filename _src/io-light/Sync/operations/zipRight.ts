@@ -1,4 +1,4 @@
-import { concreteXPure } from "@/io-light/Sync/definition";
+import { concreteXPure } from "ts-plus-test/io-light/Sync/definition";
 
 /**
  * Combines this computation with the specified computation, passing the

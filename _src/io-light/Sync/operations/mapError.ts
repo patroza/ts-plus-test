@@ -1,4 +1,4 @@
-import { concreteXPure } from "@/io-light/Sync/definition";
+import { concreteXPure } from "ts-plus-test/io-light/Sync/definition";
 
 /**
  * Transforms the error type of this computation with the specified

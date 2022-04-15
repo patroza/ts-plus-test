@@ -1,4 +1,4 @@
-import { FlatMap } from "@/io-light/XPure/definition/primitives";
+import { FlatMap } from "ts-plus-test/io-light/XPure/definition/primitives";
 
 /**
  * Extends this computation with another computation that depends on the

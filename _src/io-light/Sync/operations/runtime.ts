@@ -1,4 +1,4 @@
-import { concreteXPure } from "@/io-light/Sync/definition";
+import { concreteXPure } from "ts-plus-test/io-light/Sync/definition";
 
 /**
  * Runs this computation returning either an error of type `E` or a success of

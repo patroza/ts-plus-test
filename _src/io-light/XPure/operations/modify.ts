@@ -1,4 +1,4 @@
-import { Modify } from "@/io-light/XPure/definition/primitives";
+import { Modify } from "ts-plus-test/io-light/XPure/definition/primitives";
 
 /**
  * Constructs a computation from the specified modify function.

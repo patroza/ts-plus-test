@@ -1,4 +1,4 @@
-import { concreteXPure } from "@/io-light/Sync/definition";
+import { concreteXPure } from "ts-plus-test/io-light/Sync/definition";
 /**
  * Returns a computation whose error and success channels have been mapped
  * by the specified functions, `f` and `g`.

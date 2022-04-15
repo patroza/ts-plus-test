@@ -1,4 +1,4 @@
-import { concreteXPure } from "@/io-light/Sync/definition";
+import { concreteXPure } from "ts-plus-test/io-light/Sync/definition";
 
 /**
  * Returns a computation whose failure and success have been lifted into an

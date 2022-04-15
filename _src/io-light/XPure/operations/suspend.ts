@@ -1,4 +1,4 @@
-import { Suspend } from "@/io-light/XPure/definition/primitives";
+import { Suspend } from "ts-plus-test/io-light/XPure/definition/primitives";
 
 /**
  * Suspend a computation, useful in recursion.

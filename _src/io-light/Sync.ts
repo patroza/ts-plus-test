@@ -1,4 +1,4 @@
-// codegen:start {preset: barrel, include: ./Sync/*.ts, prefix: "@/io-light"}
-export * from "@/io-light/Sync/definition";
-export * from "@/io-light/Sync/operations";
+// codegen:start {preset: barrel, include: ./Sync/*.ts, prefix: "ts-plus-test/io-light"}
+export * from "ts-plus-test/io-light/Sync/definition";
+export * from "ts-plus-test/io-light/Sync/operations";
 // codegen:end

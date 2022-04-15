@@ -1,4 +1,4 @@
-import { concreteXPure } from "@/io-light/XPure/definition/primitives";
+import { concreteXPure } from "ts-plus-test/io-light/XPure/definition/primitives";
 
 type Frame = FoldFrame | ApplyFrame;
 
