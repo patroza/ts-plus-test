@@ -7,6 +7,13 @@ export const isPositive = (n: number) =>
 export const isPositiveEff = (n: number) =>
   n > 0 ? Effect("positive") : Effect.fail("negative")
 
+type Bar = { bar: string }
+type Foo = { foo: string }
+const S1 = Service.Tag<Bar>()
+const S2 = Service.Tag<Foo>()
+type S1 = typeof S1
+type S2 = typeof S2
+
 export const switched = (n: number) => {
   switch (n) {
     case 0:
@@ -18,9 +25,9 @@ export const switched = (n: number) => {
     case 3:
       return Effect.fail(3 as const)
     case 4:
-      return Effect.environmentWithEffect((r: { bar: string }) => Effect.die(r.bar))
+      return Effect.serviceWithEffect(S1)((r) => Effect.die(r.bar))
     default:
-      return Effect.environmentWithEffect((r: { foo: string }) => Effect.die(r.foo))
+      return Effect.serviceWithEffect(S2)((r) => Effect.die(r.foo))
   }
 }
 

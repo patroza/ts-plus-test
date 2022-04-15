@@ -1,10 +1,10 @@
 /* eslint-disable @typescript-eslint/no-empty-interface */
-declare global {
-  /**
-   * @tsplus type string
-   */
-  export interface String {}
-}
+// declare global {
+//   /**
+//    * @tsplus type string
+//    */
+//   export interface String {}
+// }
 
 export interface String50Brand {
   readonly String50: unique symbol
@@ -37,9 +37,10 @@ export function parse(self: string) {
  * @tsplus fluent string unsafeAsString50
  */
 export function unsafe(self: string) {
-  return parse(self)
+  const r = parse(self)
     .mapError((err) => {
       throw err
     })
     .run()
+  return r
 }

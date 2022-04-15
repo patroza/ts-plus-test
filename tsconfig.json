@@ -6,9 +6,15 @@
       "ES2021",
       "DOM"
     ],
-    "rootDir": "_src",
+    "rootDir": "./_src",
     "importsNotUsedAsValues": "remove",
     "tsPlusConfig": "./tsplus.config.json",
+    "paths": {
+      "@/*": [
+        "./_src/*"
+      ]
+    },
+    "baseUrl": "./"
   },
   "include": [
     "./_src"
