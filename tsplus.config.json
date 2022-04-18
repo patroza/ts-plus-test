@@ -1,6 +1,7 @@
 {
   "importMap": {
     "(.*)effect-ts-next/core/packages/core/(.*)\\.ts$": "@effect-ts-next/core/$2",
-    "(.*)ts-plus-test/_src/(.*)\\.ts$": "ts-plus-test/$2"
+    "(.*)ts-plus-test/_src/(.*)\\.ts$": "ts-plus-test/$2",
+    "(.*)@tsplus/stdlib/(.*)\\.ts$": "@tsplus/stdlib/$2"
   }
 }
