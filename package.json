@@ -9,7 +9,7 @@
   },
   "devDependencies": {
     "@tsconfig/strictest": "^1.0.0",
-    "@tsplus/installer": "0.0.92",
+    "@tsplus/installer": "0.0.98",
     "@tsplus/stdlib": "^0.0.51",
     "@typescript-eslint/eslint-plugin": "^5.15.0",
     "@typescript-eslint/parser": "^5.15.0",

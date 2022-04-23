@@ -14,7 +14,7 @@ export function make<T extends Effect<any, any, any>>(eff: T) {
   }
 }
 
-const worksFine = Effect.succeed(1) / Effect.$.map((x) => x * 2)
+const worksFine = Effect.succeed({ a: 1 }) / Effect.$.map((x) => x)
 export const worksFineA = identity(worksFine)
 
 export const breaksA = make(Effect.succeed(1) / Effect.$.map((x) => x * 2))
