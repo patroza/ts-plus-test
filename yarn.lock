@@ -440,9 +440,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tsplus/installer@npm:0.0.98":
-  version: 0.0.98
-  resolution: "@tsplus/installer@npm:0.0.98"
+"@tsplus/installer@npm:0.0.110":
+  version: 0.0.110
+  resolution: "@tsplus/installer@npm:0.0.110"
   dependencies:
     mkdirp: ^1.0.4
     rimraf: ^3.0.2
@@ -451,7 +451,7 @@ __metadata:
     zlib: ^1.0.5
   bin:
     tsplus-install: bin/tsplus-install
-  checksum: c464cf5e0d952917079fa78c34caf3dbc7d63c3dc5545fe3d466c2893d53531681228cddfc6d1e0e01e02b131fc9f9e117a8dbbd0500d704cd72cc475bd0be78
+  checksum: 151f45539a296dff6ec0ff6ed7180fda08426f3ea3389c408879786135300e9221326b87d1c6b464dc5cab36b50223793d0a9d25260a43cecdd6febafa250348
   languageName: node
   linkType: hard
 
@@ -3882,7 +3882,7 @@ __metadata:
   dependencies:
     "@effect/core": ^0.0.1
     "@tsconfig/strictest": ^1.0.0
-    "@tsplus/installer": 0.0.98
+    "@tsplus/installer": 0.0.110
     "@tsplus/stdlib": ^0.0.51
     "@typescript-eslint/eslint-plugin": ^5.15.0
     "@typescript-eslint/parser": ^5.15.0
