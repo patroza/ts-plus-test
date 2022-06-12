@@ -1,0 +1,5 @@
+Observable("test")
+  .map((_) => _ + _)
+  .mergeMap((_) => Observable([_]))
+  .tap((_) => Observable(console.log(_)))
+  .subscribe()
