@@ -1,6 +1,7 @@
 {
   "name": "ts-plus-test",
   "packageManager": "yarn@3.2.0",
+  "type": "module",
   "dependencies": {
     "@effect/core": "^0.0.1",
     "patch-package": "^6.4.7",
@@ -37,8 +38,8 @@
     "clean": "rm -rf build",
     "build": "tsc --build",
     "postinstall": "tsplus-install && patch-package",
-    "start": "node build/dist/test.js",
-    "dev": "ts-node ./_src/test.ts"
+    "start": "node build/dist/rxjs/usage.js",
+    "dev": "ts-node ./_src/rxjs/usage.ts"
   },
   "tsplus": {
     "typeDir": "./build/dts"
