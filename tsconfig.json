@@ -25,7 +25,10 @@
         }
         // "debug": { "include": ["src/internal/main-thread.ts"] }
       },
-    ]
+    ],
+    "tsPlusTypes": [
+      "./vendor/effect-io-tsplus.json"
+    ],
   },
   "include": [
     "./src"
