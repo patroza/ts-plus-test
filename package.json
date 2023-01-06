@@ -9,7 +9,9 @@
   },
   "devDependencies": {
     "@effect/language-service": "^0.0.10",
+    "@rollup/pluginutils": "^5.0.2",
     "@tsconfig/strictest": "^1.0.0",
+    "@types/node": "^18.11.18",
     "@typescript-eslint/eslint-plugin": "^5.15.0",
     "@typescript-eslint/parser": "^5.15.0",
     "eslint": "^8.11.0",

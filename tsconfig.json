@@ -25,8 +25,9 @@
         }
         // "debug": { "include": ["src/internal/main-thread.ts"] }
       },
-    },
-    "include": [
-      "./src"
     ]
-  }
+  },
+  "include": [
+    "./src"
+  ]
+}
