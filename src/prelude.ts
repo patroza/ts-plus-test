@@ -1,4 +1,4 @@
-export * as Effect from "@effect/io/Effect"
+export { Effect } from "@effect/io/Effect"
 
 export * as Logger from "@effect/io/Logger"
 
