@@ -7,4 +7,4 @@ import { pipe } from "@fp-ts/data/Function"
 /**
  * @tsplus global
  */
-import { Effect, Level, Logger } from "ts-plus-test/prelude"
+import { Effect } from "@effect/io/Effect"
