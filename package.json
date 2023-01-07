@@ -50,12 +50,13 @@
     "eslint-watch": "^8.0.0",
     "prettier": "^2.6.0",
     "ts-node": "^10.7.0",
-    "typescript": "https://github.com/0x706b/typescript/raw/043313ca8f/typescript-5.0.0-tsplus.20221227.tgz"
+    "typescript": "https://github.com/0x706b/typescript/raw/7e45a7362f/typescript-5.0.0-tsplus.20230107.tgz"
   },
   "resolutions": {
     "@fp-ts/core": "^0.0.11",
     "@fp-ts/data": "^0.0.36",
-    "@effect/io": "^0.0.55"
+    "@effect/io": "^0.0.55",
+    "@effect/language-service@0.0.10": "patch:@effect/language-service@npm:0.0.10#.yarn/patches/@effect-language-service-npm-0.0.10-cfae2abc28.patch"
   },
   "scripts": {
     "build": "tsc --build",

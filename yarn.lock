@@ -3752,7 +3752,7 @@ __metadata:
     eslint-watch: ^8.0.0
     prettier: ^2.6.0
     ts-node: ^10.7.0
-    typescript: "https://github.com/0x706b/typescript/raw/043313ca8f/typescript-5.0.0-tsplus.20221227.tgz"
+    typescript: "https://github.com/0x706b/typescript/raw/7e45a7362f/typescript-5.0.0-tsplus.20230107.tgz"
   languageName: unknown
   linkType: soft
 
@@ -3816,23 +3816,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@https://github.com/0x706b/typescript/raw/043313ca8f/typescript-5.0.0-tsplus.20221227.tgz":
-  version: 5.0.0-tsplus.20221227
-  resolution: "typescript@https://github.com/0x706b/typescript/raw/043313ca8f/typescript-5.0.0-tsplus.20221227.tgz"
+"typescript@https://github.com/0x706b/typescript/raw/7e45a7362f/typescript-5.0.0-tsplus.20230107.tgz":
+  version: 5.0.0-tsplus.20230107
+  resolution: "typescript@https://github.com/0x706b/typescript/raw/7e45a7362f/typescript-5.0.0-tsplus.20230107.tgz"
   bin:
     tsc: ./bin/tsc
     tsserver: ./bin/tsserver
-  checksum: 77e180cd72f36a4af7ea0eacaba3791082d92201102f333edda7ab45e9f270d639b781765e75cf5ee1b9a7a753190b39eae93ebdb8c723c23a6a3b51a79dbd62
+  checksum: 2cf52f32b20d7613276a3ad8349cfeca88bcd12597f342713a63d65599fbed357d81c042bff5c37cc44ad845857f3f6439df5f05d735896f33993f2ec9a0d964
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@https%3A//github.com/0x706b/typescript/raw/043313ca8f/typescript-5.0.0-tsplus.20221227.tgz#~builtin<compat/typescript>":
-  version: 5.0.0-tsplus.20221227
-  resolution: "typescript@patch:typescript@https%3A//github.com/0x706b/typescript/raw/043313ca8f/typescript-5.0.0-tsplus.20221227.tgz#~builtin<compat/typescript>::version=5.0.0-tsplus.20221227&hash=bda367"
+"typescript@patch:typescript@https%3A//github.com/0x706b/typescript/raw/7e45a7362f/typescript-5.0.0-tsplus.20230107.tgz#~builtin<compat/typescript>":
+  version: 5.0.0-tsplus.20230107
+  resolution: "typescript@patch:typescript@https%3A//github.com/0x706b/typescript/raw/7e45a7362f/typescript-5.0.0-tsplus.20230107.tgz#~builtin<compat/typescript>::version=5.0.0-tsplus.20230107&hash=bda367"
   bin:
     tsc: ./bin/tsc
     tsserver: ./bin/tsserver
-  checksum: 6d727b8918621feb6bb7d9adadd9d1d52838605e4138a55f06fb9d362cee98dc95a8dadedfa9398beaf00a3efadd0a53a0741589b29d69858ac6bdfdc569099c
+  checksum: 1c79ae5a44152986b4a42173208fd629f432b32363e3418853140450c7b331a309fe3fe79563f41dfd4cc8f75bcb11ff53d77def4b97a04024f96ece847bdc06
   languageName: node
   linkType: hard
 
