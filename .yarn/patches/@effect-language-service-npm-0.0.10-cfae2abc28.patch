@@ -1,0 +1,31 @@
+diff --git a/transformer.js b/transformer.js
+index d119a28427139fb3494eeeed8e23efb8a3a17925..d40bc8180799473c7422dda9545a05ac2b6c6802 100644
+--- a/transformer.js
++++ b/transformer.js
+@@ -47,6 +47,7 @@ function effectPlugin(program, options) {
+             const nodeEnd = sourceFile.getLineAndCharacterOfPosition(pos);
+             return ctx.factory.createBinaryExpression(fileName.get, ctx.factory.createToken(_typescript.default.SyntaxKind.PlusToken), ctx.factory.createStringLiteral(`:${nodeEnd.line + 1}:${nodeEnd.character + 1}`));
+           } catch (e) {
++            console.warn(e)
+             return undefined;
+           }
+         }
+@@ -88,12 +89,17 @@ function effectPlugin(program, options) {
+           }
+           return node;
+         };
++        const tryFindSourceFileName = node => {
++          try {
++            return findSource(declaration).fileName
++          } catch { return "" }
++        };
+         const optimizeVisitor = node => {
+           const visited = _typescript.default.visitEachChild(node, optimizeVisitor, ctx);
+           if (_typescript.default.isCallExpression(visited) && visited.arguments.length > 0) {
+             const signature = checker.getResolvedSignature(visited);
+             const declaration = signature?.declaration;
+-            if (declaration && !_typescript.default.isJSDocSignature(declaration) && findSource(declaration).fileName.includes("@fp-ts/data/Function")) {
++            if (declaration && !_typescript.default.isJSDocSignature(declaration) && tryFindSourceFileName(declaration).includes("@fp-ts/data/Function")) {
+               if (declaration.name?.getText() === "pipe") {
+                 let expr = _typescript.default.visitNode(visited.arguments[0], optimizeVisitor);
+                 for (let i = 1; i < visited.arguments.length; i++) {
