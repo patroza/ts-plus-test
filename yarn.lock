@@ -3752,7 +3752,7 @@ __metadata:
     eslint-watch: ^8.0.0
     prettier: ^2.6.0
     ts-node: ^10.7.0
-    typescript: "https://github.com/0x706b/typescript/raw/7e45a7362f/typescript-5.0.0-tsplus.20230107.tgz"
+    typescript: "https://github.com/0x706b/typescript/raw/artifact/tsplus-20230108/typescript-5.0.0-tsplus.20230108.tgz"
   languageName: unknown
   linkType: soft
 
@@ -3816,23 +3816,23 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@https://github.com/0x706b/typescript/raw/7e45a7362f/typescript-5.0.0-tsplus.20230107.tgz":
-  version: 5.0.0-tsplus.20230107
-  resolution: "typescript@https://github.com/0x706b/typescript/raw/7e45a7362f/typescript-5.0.0-tsplus.20230107.tgz"
+"typescript@https://github.com/0x706b/typescript/raw/artifact/tsplus-20230108/typescript-5.0.0-tsplus.20230108.tgz":
+  version: 5.0.0-tsplus.20230108
+  resolution: "typescript@https://github.com/0x706b/typescript/raw/artifact/tsplus-20230108/typescript-5.0.0-tsplus.20230108.tgz"
   bin:
     tsc: ./bin/tsc
     tsserver: ./bin/tsserver
-  checksum: 2cf52f32b20d7613276a3ad8349cfeca88bcd12597f342713a63d65599fbed357d81c042bff5c37cc44ad845857f3f6439df5f05d735896f33993f2ec9a0d964
+  checksum: 7b27189de1ef7180a0318b17af1975675430fc77d09353d8c375304aa3622ef97f25c652457bd27af435fc6101f040cbaf432fe3ab6c3af1e04bf39ba05d6bbc
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@https%3A//github.com/0x706b/typescript/raw/7e45a7362f/typescript-5.0.0-tsplus.20230107.tgz#~builtin<compat/typescript>":
-  version: 5.0.0-tsplus.20230107
-  resolution: "typescript@patch:typescript@https%3A//github.com/0x706b/typescript/raw/7e45a7362f/typescript-5.0.0-tsplus.20230107.tgz#~builtin<compat/typescript>::version=5.0.0-tsplus.20230107&hash=bda367"
+"typescript@patch:typescript@https%3A//github.com/0x706b/typescript/raw/artifact/tsplus-20230108/typescript-5.0.0-tsplus.20230108.tgz#~builtin<compat/typescript>":
+  version: 5.0.0-tsplus.20230108
+  resolution: "typescript@patch:typescript@https%3A//github.com/0x706b/typescript/raw/artifact/tsplus-20230108/typescript-5.0.0-tsplus.20230108.tgz#~builtin<compat/typescript>::version=5.0.0-tsplus.20230108&hash=bda367"
   bin:
     tsc: ./bin/tsc
     tsserver: ./bin/tsserver
-  checksum: 1c79ae5a44152986b4a42173208fd629f432b32363e3418853140450c7b331a309fe3fe79563f41dfd4cc8f75bcb11ff53d77def4b97a04024f96ece847bdc06
+  checksum: 74322a065ee8dfaf56c3827dcd6c0f22f980dcf6eb662676a94c92a3e40762a2994ba7f8b1b7c755e69030b5866eb10a5d5dff1590763473bd67f2742b8d3d75
   languageName: node
   linkType: hard
 
